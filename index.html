@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook </title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1>
+                        <a href="#" title="Ir para página inicial do facebook" class="header__link"></a>
+                            <p>clonebook</p>
+                        </a>
+                </h1>
+                </div>
+                    <div class="header__login">
+                        <table>
+                            <tr>
+                                <td class="header__cells">
+                                    <label>Email ou telefone</label>
+                                </td>
+                                <td class="header__cells">
+                                    <label>Senha</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="header__cells">
+                                    <input type="email" class="header__input" id="login">
+                                </td>
+                                <td class="header__cells">
+                                    <input type="password" class="header__input" id="senha_login">
+                                </td>
+                                <td class="header__cells">
+                                    <label>
+                                        <input value="Entrar" type="submit" class="header__input header__button" onclick="entrar()">
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="header__cells">
+
+                                </td>
+                                <td class="header__cells">
+                                    <a href="#">Esqueceu sua senha?</a>
+                                </td>
+                                
+                            </tr>
+                        
+                        </table>
+                    </div>
+                 </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div>
+                <div class="main__title">
+                    <h1>Criar uma nova conta</h1>
+                </div>
+                <div class="main__title main__subtitle">
+                    <h2>É rápido e fácil.</h2>
+                </div>
+            </div>
+            <div>
+                <div class="main__content">
+                    <div class="main__nome">
+                        <input type="text" placeholder="Nome" id="nome" class="main__input">
+                    </div>
+                    <div class="main__nome">
+                        <input type="text" placeholder="Sobrenome" id="sobrenome" class="main__input">
+                    </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Celular ou Email" id="email" class="main__input">
+                </div>
+                <div>
+                    <input type="password" placeholder="Nova senha" id="senha" class="main__input">
+                </div>
+                <div class="main__nasc">
+                    <p>Data de nascimento</p>
+                    <input type="date" class="main__input" id="nascimento" style="margin-top: 0px;">
+                </div>
+                <div style="margin-top: 20px;">
+                    <p style="margin-bottom: 10px;">Gênero</p>
+                    <input type="radio" name="selectSex" id="masculino">
+                    <label for="masculino" class="main__sexOption">Masculino</label>
+                    <input type="radio" name="selectSex" id="Feminino">
+                    <label for="Feminino" class="main__sexOption">Feminino</label>
+                    <input type="radio" name="selectSex" id="Personalizado" checked>
+                    <label for="Personalizado" class="main__sexOption">Personalizado</label>
+                </div>
+                <div class="main__warning">
+                    <p>
+                        Ao clicar em Cadastre-se, você concorda com nossos <a>Termos</a>, <a>Política de Dados</a> e <a>Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.
+                    </p>
+                </div>
+                <div>
+                    <input type="button" value="Cadastre-se" class="main__cadastro" onclick="cadastrar_conta()">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"> 
+            <p>This is a facebook login screen UI clone made for estudying porpuses</p>
+            <p>Este é um clone da Interface de login do facebook feita para propositos de estudo</p>
+            <p>Por <a href="https://www.instagram.com/jeferson_souuza/"> <strong>Jefferson Pereira de Souza</strong></a></p>
+        </div>
+    </footer>
+</body>
+</html>
